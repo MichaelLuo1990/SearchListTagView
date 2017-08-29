@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="5dp"
+    android:layout_height="48dp">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/show_choose_ll"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--未填充区域-响应处理-->
+    <TextView
+        android:id="@+id/tv_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_toEndOf="@+id/horizontalScrollView"
+        android:layout_toRightOf="@+id/horizontalScrollView"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
